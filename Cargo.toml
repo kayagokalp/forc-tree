@@ -1,0 +1,15 @@
+[package]
+name = "forc-tree"
+version = "0.1.0"
+edition = "2021"
+description = "A forc plugin to print dependency tree of a Sway project."
+license = "MIT"
+repository = "https://github.com/kayagokalp/forc-tree"
+exclude = ["test/"]
+
+[dependencies]
+anyhow = "1.0.75"
+clap = { version = "4.3", features = ["derive"] }
+forc-pkg = "0.44.1"
+petgraph = "0.6.4"
+ptree = { version = "0.4.0", features = ["petgraph"] }
